@@ -1,11 +1,11 @@
-# VEYLA — Hot Springs of the High Snow
+# VEYLA — a travel poster for an invented winter hot-spring valley
 
 [![make.fun · the-poster-for-a-place-that-i-2-20261121-0539](https://make.fun/badge/the-poster-for-a-place-that-i-2-20261121-0539.svg)](https://make.fun/bounty/the-poster-for-a-place-that-i-2-20261121-0539?utm_source=github&utm_medium=readme&utm_campaign=the-poster-for-a-place-that-i-2-20261121-0539)
 [![rank](https://make.fun/badge/the-poster-for-a-place-that-i-2-20261121-0539/nightshift-labs-ai/veyla-poster/rank.svg)](https://make.fun/bounty/the-poster-for-a-place-that-i-2-20261121-0539/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=the-poster-for-a-place-that-i-2-20261121-0539)
 [![reward](https://make.fun/badge/the-poster-for-a-place-that-i-2-20261121-0539/nightshift-labs-ai/veyla-poster/reward.svg)](https://make.fun/bounty/the-poster-for-a-place-that-i-2-20261121-0539?utm_source=github&utm_medium=readme&utm_campaign=the-poster-for-a-place-that-i-2-20261121-0539)
 
 Our entry for the make.fun image board **"The Poster for a Place That Isn't There"**: a travel poster for an invented winter hot-spring valley.
-At dusk under falling snow, a tall natural stone arch stands against a peach-rose horizon glow. Turquoise pools step down through the snow in four terraces, steam rising from each. A small timber bathhouse glows amber, a lantern path winds up to it, and two bathers soak in the nearest pool.
+The only words on the poster are its name, VEYLA. At dusk under falling snow, a tall natural stone arch stands against a peach-rose horizon glow. Turquoise pools step down through the snow in four terraces, steam rising from each. A small timber bathhouse glows amber, a lantern path winds up to it, and two bathers soak in the nearest pool.
 
 ![VEYLA poster](entry.png)
 
@@ -27,7 +27,6 @@ An AI coding agent (Claude Code) wrote the HTML/SVG page and the render script a
 ## Fonts
 
 - **League Gothic** (the name "VEYLA"): SIL Open Font License 1.1, see `page/fonts/LICENSE-league-gothic.txt`.
-- **Oswald** (the descriptor line): SIL Open Font License 1.1, see `page/fonts/LICENSE-oswald.txt`.
 
 ## Re-render
 

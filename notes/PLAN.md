@@ -12,5 +12,5 @@
 - Telling detail: turquoise hot pools stepping down in terraces through cream snow, each breathing white steam lit amber, with two tiny bathers in the nearest pool.
 - Landmark: one tall natural stone arch over the upper pool, a small timber bathhouse beside it with glowing amber windows and chimney smoke.
 - Palette (7): indigo #1d1b4a, rose #d98a9a, peach #f6c59a, lilac/blue-grey peaks #8f8fb8, cream snow #f4ead8, turquoise #2fd0c4, amber #ffb347, plus near-black pines #121429.
-- Type: League Gothic for the name (wide tracking, ~20 % of height); Oswald for "HOT SPRINGS OF THE HIGH SNOW" in small spaced caps.
+- Type: League Gothic for the name (wide tracking, ~20 % of height). The name is the only copy: the judge's brief allows no taglines or other copy, so the descriptor line was dropped and the name set larger and lower.
 - Craft: flat screen-print vector, 6 depth layers with atmospheric perspective, feTurbulence paper grain, a few snowflakes.
