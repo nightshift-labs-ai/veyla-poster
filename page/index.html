@@ -196,7 +196,7 @@
   fg.filter(f => f[2] > 150).forEach(([x, b, h]) => {
     for (let i = 1; i <= 4; i++) {
       const y = b - h + h * 0.88 * i / 5, ww = h * 0.34 * (0.35 + 0.65 * i / 5);
-      el('path', { d: `M${x - ww * 0.9} ${y - 2} Q ${x - ww * 0.5} ${y - h * 0.035} ${x - ww * 0.2} ${y - h * 0.05} L ${x - ww * 0.35} ${y - 1} Z`, fill: '#e9ddea', opacity: 0.85 }, $('pines'));
+      el('path', { d: `M${x - ww * 0.9} ${y - 2} Q ${x - ww * 0.5} ${y - h * 0.035} ${x - ww * 0.2} ${y - h * 0.05} L ${x - ww * 0.35} ${y - 1} Z`, fill: '#b9b3d6', opacity: 0.55 }, $('pines'));
     }
   });
 
