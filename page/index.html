@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VEYLA — Hot Springs of the High Snow</title>
+<style>
+  @font-face { font-family: 'LeagueGothic'; src: url('fonts/league-gothic-latin-400-normal.woff2') format('woff2'); }
+  @font-face { font-family: 'OswaldP'; font-weight: 400; src: url('fonts/oswald-latin-400-normal.woff2') format('woff2'); }
+  @font-face { font-family: 'OswaldP'; font-weight: 500; src: url('fonts/oswald-latin-500-normal.woff2') format('woff2'); }
+  html, body { margin: 0; padding: 0; width: 1024px; height: 1024px; overflow: hidden; background: #1d1b4a; }
+  svg { display: block; }
+  .title { font-family: 'LeagueGothic', sans-serif; font-size: 252px; letter-spacing: 34px; fill: #f6ead6; }
+  .desc { font-family: 'OswaldP', sans-serif; font-weight: 500; font-size: 21px; letter-spacing: 9.5px; fill: #f6c59a; }
+</style>
+</head>
+<body>
+<svg id="art" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151338"/>
+      <stop offset="0.27" stop-color="#25225a"/>
+      <stop offset="0.36" stop-color="#57437f"/>
+      <stop offset="0.43" stop-color="#b9789a"/>
+      <stop offset="0.50" stop-color="#ee9f92"/>
+      <stop offset="0.57" stop-color="#f8c79b"/>
+      <stop offset="1" stop-color="#fbdcae"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.45">
+      <stop offset="0" stop-color="#ffe2b0" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#f7b48e" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#f7b48e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7ff5e6"/>
+      <stop offset="0.45" stop-color="#2fd0c4"/>
+      <stop offset="1" stop-color="#11908f"/>
+    </linearGradient>
+    <linearGradient id="snowG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbe9d6"/>
+      <stop offset="1" stop-color="#e9dcea"/>
+    </linearGradient>
+    <linearGradient id="halfMaskG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.25" stop-color="#000"/>
+      <stop offset="0.5" stop-color="#fff"/>
+      <stop offset="0.62" stop-color="#000"/>
+    </linearGradient>
+    <mask id="halfMask"><rect width="1024" height="1024" fill="url(#halfMaskG)"/></mask>
+    <pattern id="dots" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <circle cx="4.5" cy="4.5" r="1.6" fill="#f3a3a0"/>
+    </pattern>
+    <radialGradient id="steamG">
+      <stop offset="0" stop-color="#fff6ea" stop-opacity="0.95"/>
+      <stop offset="0.6" stop-color="#ffe9d4" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ffe9d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="amberGlow">
+      <stop offset="0" stop-color="#ffd27a" stop-opacity="0.95"/>
+      <stop offset="0.35" stop-color="#ffb347" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ffb347" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur6" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="blur14" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.38  0 0 0 0 0.35  0 0 0 0.9 -0.25"/>
+    </filter>
+    <filter id="mottle" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="3"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 0.95  0 0 0 0 0.9  0 0 0 0.35 -0.08"/>
+    </filter>
+  </defs>
+
+  <!-- SKY -->
+  <rect width="1024" height="1024" fill="url(#sky)"/>
+  <rect width="1024" height="1024" fill="url(#dots)" mask="url(#halfMask)" opacity="0.35"/>
+  <g id="stars"></g>
+  <ellipse cx="520" cy="520" rx="460" ry="250" fill="url(#glow)"/>
+
+  <!-- TITLE BAND -->
+  <text class="title" x="529" y="236" text-anchor="middle">VEYLA</text>
+  <text class="desc" x="517" y="282" text-anchor="middle">HOT SPRINGS OF THE HIGH SNOW</text>
+  <rect x="402" y="300" width="230" height="1.6" fill="#f6c59a" opacity="0.55"/>
+
+  <!-- LAYER 1: farthest peaks -->
+  <path fill="#c9a3b8" d="M0 560 L70 500 L120 520 L190 440 L250 488 L300 470 L360 520 L420 500 L470 540 L560 520 L640 470 L700 500 L760 430 L830 480 L880 460 L950 505 L1024 470 L1024 640 L0 640Z"/>
+  <path fill="#efd2cf" opacity="0.8" d="M190 440 L215 462 L205 470 L222 478 L250 488 L230 470 Z M760 430 L790 455 L778 462 L800 470 L830 480 L800 452 Z"/>
+  <!-- LAYER 2 -->
+  <path fill="#9c8fb9" d="M0 600 L60 560 L110 575 L170 515 L230 560 L290 540 L340 585 L380 575 L430 610 L600 610 L660 560 L720 590 L800 505 L860 555 L920 540 L980 580 L1024 560 L1024 700 L0 700Z"/>
+  <path fill="#efe1e6" d="M170 515 L195 540 L184 546 L206 552 L230 560 L208 538 Z M800 505 L824 530 L812 536 L838 545 L860 555 L834 530 Z"/>
+  <!-- LAYER 3: blue-grey ridge -->
+  <path fill="#6f6c9e" d="M0 650 L80 615 L150 640 L230 600 L300 640 L360 630 L420 660 L620 660 L700 625 L770 650 L860 600 L950 640 L1024 620 L1024 760 L0 760Z"/>
+  <g id="midpines"></g>
+
+  <!-- ARCH + BATHHOUSE -->
+  <path fill="#3b3266" d="M330 690 L360 640 L400 630 L640 630 L700 640 L760 690 Z"/>
+  <path fill="#2a2452" fill-rule="evenodd" d="
+    M372 668 C 380 560, 392 440, 450 372 C 488 330, 556 322, 600 352 C 646 384, 660 460, 664 540 C 667 600, 672 640, 680 668 Z
+    M432 668 C 436 580, 450 474, 488 430 C 516 398, 566 400, 590 438 C 612 476, 616 560, 618 668 Z"/>
+  <path fill="#f4e6dc" d="M450 372 C 488 330, 556 322, 600 352 C 580 346, 560 344, 540 348 C 512 344, 480 352, 462 366 Z"/>
+  <path fill="#433a74" opacity="0.8" d="M600 352 C 646 384, 660 460, 664 540 C 667 600, 672 640, 680 668 L 650 668 C 648 600, 646 520, 636 450 C 628 404, 616 374, 600 352 Z"/>
+  <!-- snow ledge under arch -->
+  <path fill="url(#snowG)" d="M300 700 C 360 676, 430 664, 520 664 C 610 664, 700 672, 780 700 L780 720 L300 720 Z"/>
+  <!-- bathhouse -->
+  <g id="bathhouse">
+    <rect x="690" y="606" width="118" height="70" fill="#4a2f3e"/>
+    <path d="M680 610 L749 562 L818 610 Z" fill="#2d1f33"/>
+    <path d="M676 612 L749 558 L822 612 L812 614 L749 568 L686 614 Z" fill="#f4ead8"/>
+    <rect x="784" y="566" width="14" height="30" fill="#2d1f33"/>
+    <rect x="782" y="562" width="18" height="6" fill="#f4ead8"/>
+    <rect x="702" y="624" width="18" height="24" fill="#ffb347"/>
+    <rect x="730" y="624" width="18" height="24" fill="#ffc766"/>
+    <rect x="758" y="624" width="18" height="24" fill="#ffb347"/>
+    <rect x="786" y="630" width="14" height="46" fill="#ffd27a"/>
+    <circle cx="740" cy="636" r="60" fill="url(#amberGlow)" opacity="0.55"/>
+    <path d="M791 560 C 780 540, 805 528, 794 506 C 786 490, 806 478, 800 460" stroke="#f3e3e6" stroke-width="9" fill="none" stroke-linecap="round" opacity="0.55" filter="url(#blur6)"/>
+  </g>
+
+  <!-- TERRACES -->
+  <g id="terraces">
+    <!-- snow field -->
+    <path fill="url(#snowG)" d="M0 720 C 200 700, 360 700, 520 708 C 700 716, 860 700, 1024 712 L1024 1024 L0 1024 Z"/>
+    <path fill="#d9cbe2" opacity="0.7" d="M0 760 C 160 740, 300 760, 380 790 C 300 800, 150 800, 0 820 Z M1024 760 C 900 770, 820 800, 780 840 C 880 830, 960 820, 1024 830 Z"/>
+
+    <!-- pool 1 under arch -->
+    <path fill="#e7d3dc" d="M412 682 C 430 664, 610 662, 640 680 C 650 692, 610 706, 520 708 C 440 708, 400 696, 412 682 Z"/>
+    <path fill="url(#water)" d="M424 682 C 444 670, 600 668, 628 681 C 634 690, 600 698, 520 700 C 450 700, 416 692, 424 682 Z"/>
+
+    <!-- pool 2 -->
+    <path fill="#e9d6df" d="M290 770 C 300 738, 600 732, 670 758 C 690 776, 620 800, 480 802 C 360 802, 280 790, 290 770 Z"/>
+    <path fill="#c7b2cf" d="M300 782 C 360 800, 600 800, 668 770 C 664 790, 600 812, 480 814 C 370 814, 300 800, 300 782 Z"/>
+    <path fill="url(#water)" d="M306 768 C 322 746, 594 742, 652 760 C 662 774, 604 790, 480 792 C 370 792, 298 782, 306 768 Z"/>
+
+    <!-- pool 3 -->
+    <path fill="#eddbe2" d="M420 860 C 440 820, 820 812, 900 842 C 930 868, 820 896, 660 898 C 520 898, 400 884, 420 860 Z"/>
+    <path fill="#c4aecd" d="M424 874 C 500 900, 820 898, 902 856 C 900 884, 820 912, 660 914 C 520 914, 430 898, 424 874 Z"/>
+    <path fill="url(#water)" d="M438 858 C 460 832, 812 826, 880 846 C 896 864, 812 884, 660 886 C 530 886, 424 876, 438 858 Z"/>
+
+    <!-- pool 4 nearest -->
+    <path fill="#f1e1e6" d="M40 980 C 40 920, 300 900, 520 910 C 720 920, 820 950, 760 990 C 700 1024, 300 1030, 120 1024 C 60 1020, 40 1000, 40 980 Z"/>
+    <path fill="url(#water)" d="M64 982 C 70 934, 300 920, 520 928 C 700 936, 790 958, 740 988 C 690 1016, 320 1022, 140 1016 C 90 1012, 62 1000, 64 982 Z"/>
+  </g>
+  <g id="reflections"></g>
+  <g id="bathers">
+    <!-- two tiny bathers, heads and shoulders above water -->
+    <path d="M384 962 C 384 948, 410 946, 412 962 Z" fill="#2a2140"/>
+    <circle cx="398" cy="940" r="9" fill="#2a2140"/>
+    <path d="M394 932 C 396 924, 404 924, 406 932 Z" fill="#ff7d5c"/>
+    <path d="M426 966 C 426 952, 452 950, 454 966 Z" fill="#2a2140"/>
+    <circle cx="440" cy="945" r="8.5" fill="#2a2140"/>
+    <path d="M378 963 C 400 970, 440 972, 460 967" stroke="#b9fff4" stroke-width="2.5" fill="none" opacity="0.9"/>
+  </g>
+  <g id="steam"></g>
+  <g id="lanterns"></g>
+  <g id="pines"></g>
+  <g id="flakes"></g>
+
+  <!-- PRINT TEXTURE -->
+  <rect width="1024" height="1024" filter="url(#mottle)" style="mix-blend-mode: soft-light"/>
+  <rect width="1024" height="1024" filter="url(#grain)" opacity="0.22" style="mix-blend-mode: multiply"/>
+</svg>
+<script>
+(function () {
+  const NS = 'http://www.w3.org/2000/svg';
+  let s = 20261121;
+  const rnd = () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; };
+  const el = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent.appendChild(e); return e; };
+  const $ = id => document.getElementById(id);
+
+  // stars in the upper sky, kept clear of the title letters
+  for (let i = 0; i < 46; i++) {
+    const x = rnd() * 1024, y = 20 + rnd() * 400;
+    if (y < 310 && x > 120 && x < 920) continue;
+    el('circle', { cx: x, cy: y, r: (0.6 + rnd() * 1.3).toFixed(2), fill: '#fff4e0', opacity: (0.35 + rnd() * 0.5).toFixed(2) }, $('stars'));
+  }
+
+  function pine(x, b, h, fill, parent) {
+    const w = h * 0.34, tiers = 5; const L = [], R = [];
+    for (let i = 1; i <= tiers; i++) {
+      const y = b - h + h * 0.88 * i / tiers, ww = w * (0.35 + 0.65 * i / tiers);
+      L.push([x - ww, y]); R.push([x + ww, y]);
+      if (i < tiers) { L.push([x - ww * 0.42, y - h * 0.02]); R.push([x + ww * 0.42, y - h * 0.02]); }
+    }
+    const t = h * 0.05;
+    const pts = [[x, b - h], ...R, [x + t, b - h * 0.12], [x + t, b], [x - t, b], [x - t, b - h * 0.12], ...L.reverse()];
+    el('path', { d: 'M' + pts.map(p => p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' L') + 'Z', fill }, parent);
+  }
+  // distant pines on the blue ridge (atmospheric)
+  for (let i = 0; i < 26; i++) {
+    const x = rnd() * 1024; if (x > 330 && x < 760) continue;
+    pine(x, 690 + rnd() * 30, 30 + rnd() * 26, '#4b4a80', $('midpines'));
+  }
+  // foreground framing pines, near-black
+  const fg = [[30, 1024, 360], [110, 1010, 280], [-20, 900, 250], [190, 1040, 230], [990, 1024, 380], [910, 1030, 300], [1050, 920, 260], [840, 1050, 210], [260, 780, 120], [300, 790, 90], [880, 800, 130], [820, 790, 95]];
+  fg.forEach(([x, b, h]) => pine(x, b, h, h > 150 ? '#121429' : '#26264d', $('pines')));
+  // snow on the foreground pine tips
+  fg.filter(f => f[2] > 150).forEach(([x, b, h]) => {
+    for (let i = 1; i <= 4; i++) {
+      const y = b - h + h * 0.88 * i / 5, ww = h * 0.34 * (0.35 + 0.65 * i / 5);
+      el('path', { d: `M${x - ww * 0.9} ${y - 2} Q ${x - ww * 0.5} ${y - h * 0.035} ${x - ww * 0.2} ${y - h * 0.05} L ${x - ww * 0.35} ${y - 1} Z`, fill: '#e9ddea', opacity: 0.85 }, $('pines'));
+    }
+  });
+
+  // steam plumes rising from each pool, catching warm light
+  const pools = [[526, 684, 170, 9, 1.0], [480, 766, 300, 7, 1.0], [660, 856, 380, 7, 0.95], [400, 950, 560, 6, 0.85]];
+  pools.forEach(([cx, cy, w, n, op]) => {
+    const cols = Math.max(2, Math.round(w / 120));
+    for (let c = 0; c < cols; c++) {
+      const bx = cx - w * 0.35 + (w * 0.7) * (c + 0.5) / cols + (rnd() - 0.5) * 30;
+      for (let k = 0; k < n; k++) {
+        const drift = Math.sin(k * 0.8 + c) * 18 + k * 6;
+        el('ellipse', { cx: bx + drift, cy: cy - 10 - k * 26, rx: 26 + k * 9, ry: 16 + k * 6, fill: 'url(#steamG)', opacity: (op * (0.8 - k * 0.07)).toFixed(3), filter: 'url(#blur6)' }, $('steam'));
+      }
+    }
+  });
+  // tall plume from the arch pool reaching up toward the title band
+  for (let k = 0; k < 10; k++) {
+    el('ellipse', { cx: 520 + Math.sin(k * 0.7) * 26, cy: 640 - k * 34, rx: 34 + k * 10, ry: 20 + k * 5, fill: 'url(#steamG)', opacity: (0.42 - k * 0.036).toFixed(3), filter: 'url(#blur14)' }, $('steam'));
+  }
+
+  // lantern path winding from the near pool up to the bathhouse
+  const path = [[600, 1004], [660, 980], [720, 952], [770, 925], [810, 900], [940, 880], [960, 850], [930, 820], [880, 800], [840, 780], [810, 755], [790, 728], [770, 700], [760, 680]];
+  path.forEach(([x, y], i) => {
+    const sc = 0.55 + 0.45 * (y - 680) / 324;
+    el('circle', { cx: x, cy: y, r: 30 * sc, fill: 'url(#amberGlow)' }, $('lanterns'));
+    el('rect', { x: x - 1, y: y, width: 2 * sc, height: 12 * sc, fill: '#2a2140' }, $('lanterns'));
+    el('circle', { cx: x, cy: y, r: 5.5 * sc, fill: '#ffe39a' }, $('lanterns'));
+  });
+  // warm lantern reflections in the pools
+  [[600, 990, 26], [720, 870, 18], [640, 776, 14], [560, 690, 10]].forEach(([x, y, w]) => {
+    el('ellipse', { cx: x, cy: y, rx: w, ry: 3, fill: '#ffcf7a', opacity: 0.8 }, $('reflections'));
+    el('ellipse', { cx: x + 4, cy: y + 8, rx: w * 0.6, ry: 2, fill: '#ffcf7a', opacity: 0.5 }, $('reflections'));
+  });
+  // turquoise light ripples
+  [[260, 960, 70], [180, 990, 40], [520, 980, 60], [600, 864, 60], [420, 776, 50], [500, 686, 30]].forEach(([x, y, w]) => {
+    el('path', { d: `M${x - w} ${y} Q ${x} ${y - 5} ${x + w} ${y}`, stroke: '#c8fff6', 'stroke-width': 2, fill: 'none', opacity: 0.7 }, $('reflections'));
+  });
+
+  // a few falling snowflakes
+  for (let i = 0; i < 70; i++) {
+    const x = rnd() * 1024, y = rnd() * 1024;
+    if (y < 300 && x > 140 && x < 900) continue;
+    el('circle', { cx: x, cy: y, r: (0.9 + rnd() * 2.2).toFixed(2), fill: '#fffaf2', opacity: (0.45 + rnd() * 0.45).toFixed(2) }, $('flakes'));
+  }
+  document.fonts.ready.then(() => { window.__ready = true; });
+})();
+</script>
+</body>
+</html>
