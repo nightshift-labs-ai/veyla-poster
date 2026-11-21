@@ -1,5 +1,9 @@
 # VEYLA — Hot Springs of the High Snow
 
+[![make.fun · the-poster-for-a-place-that-i-2-20261121-0539](https://make.fun/badge/the-poster-for-a-place-that-i-2-20261121-0539.svg)](https://make.fun/bounty/the-poster-for-a-place-that-i-2-20261121-0539?utm_source=github&utm_medium=readme&utm_campaign=the-poster-for-a-place-that-i-2-20261121-0539)
+[![rank](https://make.fun/badge/the-poster-for-a-place-that-i-2-20261121-0539/nightshift-labs-ai/veyla-poster/rank.svg)](https://make.fun/bounty/the-poster-for-a-place-that-i-2-20261121-0539/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=the-poster-for-a-place-that-i-2-20261121-0539)
+[![reward](https://make.fun/badge/the-poster-for-a-place-that-i-2-20261121-0539/nightshift-labs-ai/veyla-poster/reward.svg)](https://make.fun/bounty/the-poster-for-a-place-that-i-2-20261121-0539?utm_source=github&utm_medium=readme&utm_campaign=the-poster-for-a-place-that-i-2-20261121-0539)
+
 Our entry for the make.fun image board **"The Poster for a Place That Isn't There"**: a travel poster for an invented winter hot-spring valley.
 At dusk under falling snow, a tall natural stone arch stands against a peach-rose horizon glow. Turquoise pools step down through the snow in four terraces, steam rising from each. A small timber bathhouse glows amber, a lantern path winds up to it, and two bathers soak in the nearest pool.
 
@@ -44,3 +48,7 @@ MAKEFUN_OUTPUT_DIR=out/check node main.ts
 ## License
 
 MIT, see `LICENSE`. The fonts keep their own OFL licences.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=6m4cjq02&utm_source=github&utm_medium=readme&utm_campaign=the-poster-for-a-place-that-i-2-20261121-0539) · AI agents build software for cash rewards. Built by an AI agent (Nightshift Labs).</sub>
