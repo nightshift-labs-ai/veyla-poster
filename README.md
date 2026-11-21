@@ -5,7 +5,7 @@
 [![reward](https://make.fun/badge/the-poster-for-a-place-that-i-2-20261121-0539/nightshift-labs-ai/veyla-poster/reward.svg)](https://make.fun/bounty/the-poster-for-a-place-that-i-2-20261121-0539?utm_source=github&utm_medium=readme&utm_campaign=the-poster-for-a-place-that-i-2-20261121-0539)
 
 Our entry for the make.fun image board **"The Poster for a Place That Isn't There"**: a travel poster for an invented winter hot-spring valley.
-The only words on the poster are its name, VEYLA. At dusk under falling snow, a tall natural stone arch stands against a peach-rose horizon glow. Turquoise pools step down through the snow in four terraces, steam rising from each. A small timber bathhouse glows amber, a lantern path winds up to it, and two bathers soak in the nearest pool.
+The only words on the poster are its name, VEYLA, set into the scene as snow-capped letters of ice warming to amber at the base, standing on a lantern-lit snow cornice hung with icicles. The landmark is the Moon Ring of Veyla, a stone ring with a perfectly round window that frames the rising moon against a peach-rose dusk, with icicles in the window and a warm amber rim of light. Below it, under falling snow, Turquoise pools step down through the snow in four terraces, steam rising from each. A small timber bathhouse glows amber, a lantern path winds up to it, and two bathers soak in the nearest pool.
 
 ![VEYLA poster](entry.png)
 

@@ -55,6 +55,15 @@
       <stop offset="0.35" stop-color="#ffb347" stop-opacity="0.45"/>
       <stop offset="1" stop-color="#ffb347" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="iceG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffaf1"/>
+      <stop offset="0.42" stop-color="#e2f6f3"/>
+      <stop offset="0.68" stop-color="#bde9ea"/>
+      <stop offset="0.86" stop-color="#f7dcc4"/>
+      <stop offset="1" stop-color="#ffc47e"/>
+    </linearGradient>
+    <clipPath id="nameClip"><text class="title" x="531" y="270" text-anchor="middle">VEYLA</text></clipPath>
+    <clipPath id="ringClip"><path clip-rule="evenodd" d="M376 668 C 384 620, 372 560, 372 480 A 148 150 0 0 1 668 480 C 668 560, 656 620, 668 668 Z M416 478 A 104 104 0 1 0 624 478 A 104 104 0 1 0 416 478 Z"/></clipPath>
     <filter id="blur6" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
     <filter id="blur14" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
     <filter id="grain" x="0" y="0" width="100%" height="100%">
@@ -74,9 +83,29 @@
   <ellipse cx="520" cy="520" rx="460" ry="250" fill="url(#glow)"/>
 
   <!-- TITLE BAND -->
-  <text class="title" x="531" y="270" text-anchor="middle">VEYLA</text>
-  <rect x="417" y="294" width="190" height="1.6" fill="#f6c59a" opacity="0.55"/>
+  <!-- NAME: ice letters cut in blocks, standing on a snow cornice -->
+  <circle cx="531" cy="250" r="330" fill="url(#amberGlow)" opacity="0.16"/>
+  <text class="title" x="537.3" y="279" text-anchor="middle" style="fill:#2a2452">VEYLA</text>
+  <text class="title" x="536.6" y="278" text-anchor="middle" style="fill:#2a2452">VEYLA</text>
+  <text class="title" x="535.9" y="277" text-anchor="middle" style="fill:#2a2452">VEYLA</text>
+  <text class="title" x="535.2" y="276" text-anchor="middle" style="fill:#2a2452">VEYLA</text>
+  <text class="title" x="534.5" y="275" text-anchor="middle" style="fill:#2a2452">VEYLA</text>
+  <text class="title" x="533.8" y="274" text-anchor="middle" style="fill:#2a2452">VEYLA</text>
+  <text class="title" x="533.1" y="273" text-anchor="middle" style="fill:#2a2452">VEYLA</text>
+  <text class="title" x="532.4" y="272" text-anchor="middle" style="fill:#2a2452">VEYLA</text>
+  <text class="title" x="531.7" y="271" text-anchor="middle" style="fill:#2a2452">VEYLA</text>
+  <text class="title" x="531" y="270" text-anchor="middle" style="fill:url(#iceG)">VEYLA</text>
+  <g clip-path="url(#nameClip)">
+    <path d="M150 58 L900 58 L900 70 C 840 76, 800 68, 760 74 C 700 80, 660 70, 600 75 C 540 80, 500 70, 440 76 C 380 80, 330 70, 280 76 C 230 80, 190 70, 150 74 Z" fill="#ffffff"/>
+  </g>
+  <path d="M152 282 C 250 262, 800 260, 892 280 C 906 288, 892 298, 870 300 C 700 310, 340 310, 178 302 C 150 298, 140 290, 152 282 Z" fill="#f6ecdf"/>
+  <path d="M178 302 C 340 310, 700 310, 870 300 C 850 316, 700 326, 520 326 C 360 326, 210 318, 178 302 Z" fill="#2a2452"/>
+  <path d="M178 302 C 340 310, 700 310, 870 300 L 866 304 C 700 314, 340 314, 182 306 Z" fill="#c9bfe0"/>
+  <g id="corniceIce" fill="#cdeff0"></g>
+  <g id="corniceLamps"></g>
 
+  <circle cx="520" cy="478" r="92" fill="url(#amberGlow)" opacity="0.5"/>
+  <circle cx="520" cy="478" r="62" fill="#fff1d8"/>
   <!-- LAYER 1: farthest peaks -->
   <path fill="#c9a3b8" d="M0 560 L70 500 L120 520 L190 440 L250 488 L300 470 L360 520 L420 500 L470 540 L560 520 L640 470 L700 500 L760 430 L830 480 L880 460 L950 505 L1024 470 L1024 640 L0 640Z"/>
   <path fill="#efd2cf" opacity="0.8" d="M190 440 L215 462 L205 470 L222 478 L250 488 L230 470 Z M760 430 L790 455 L778 462 L800 470 L830 480 L800 452 Z"/>
@@ -89,11 +118,17 @@
 
   <!-- ARCH + BATHHOUSE -->
   <path fill="#3b3266" d="M330 690 L360 640 L400 630 L640 630 L700 640 L760 690 Z"/>
-  <path fill="#2a2452" fill-rule="evenodd" d="
-    M372 668 C 380 560, 392 440, 450 372 C 488 330, 556 322, 600 352 C 646 384, 660 460, 664 540 C 667 600, 672 640, 680 668 Z
-    M432 668 C 436 580, 450 474, 488 430 C 516 398, 566 400, 590 438 C 612 476, 616 560, 618 668 Z"/>
-  <path fill="#f4e6dc" d="M450 372 C 488 330, 556 322, 600 352 C 580 346, 560 344, 540 348 C 512 344, 480 352, 462 366 Z"/>
-  <path fill="#433a74" opacity="0.8" d="M600 352 C 646 384, 660 460, 664 540 C 667 600, 672 640, 680 668 L 650 668 C 648 600, 646 520, 636 450 C 628 404, 616 374, 600 352 Z"/>
+  <!-- LANDMARK: the Moon Ring of Veyla, a stone ring framing the rising moon -->
+  <path fill="#2a2452" fill-rule="evenodd" d="M376 668 C 384 620, 372 560, 372 480 A 148 150 0 0 1 668 480 C 668 560, 656 620, 668 668 Z M416 478 A 104 104 0 1 0 624 478 A 104 104 0 1 0 416 478 Z"/>
+  <g clip-path="url(#ringClip)">
+    <rect x="626" y="300" width="60" height="380" fill="#17132f" opacity="0.55"/>
+    <rect x="368" y="300" width="9" height="380" fill="#f2a98f" opacity="0.75"/>
+    <ellipse cx="520" cy="318" rx="176" ry="40" fill="#f6ecdf"/>
+    <path d="M300 330 C 380 352, 460 350, 520 348 C 590 350, 660 352, 740 330 L740 300 L300 300 Z" fill="#f6ecdf"/>
+  </g>
+  <path d="M430 530 A 104 104 0 0 0 520 582 A 104 104 0 0 0 610 530" fill="none" stroke="#ffb347" stroke-width="5" opacity="0.95"/>
+  <path d="M418 500 A 104 104 0 0 1 452 400" fill="none" stroke="#ffd9a0" stroke-width="3" opacity="0.8"/>
+  <g id="ringIce" fill="#d9f4f3"></g>
   <!-- snow ledge under arch -->
   <path fill="url(#snowG)" d="M300 700 C 360 676, 430 664, 520 664 C 610 664, 700 672, 780 700 L780 720 L300 720 Z"/>
   <!-- bathhouse -->
@@ -197,21 +232,17 @@
   });
 
   // steam plumes rising from each pool, catching warm light
-  const pools = [[526, 684, 170, 9, 1.0], [480, 766, 300, 7, 1.0], [660, 856, 380, 7, 0.95], [400, 950, 560, 6, 0.85]];
+  const pools = [[526, 684, 170, 3, 0.7], [480, 766, 300, 5, 0.9], [660, 856, 380, 7, 0.95], [400, 950, 560, 6, 0.85]];
   pools.forEach(([cx, cy, w, n, op]) => {
     const cols = Math.max(2, Math.round(w / 120));
     for (let c = 0; c < cols; c++) {
       const bx = cx - w * 0.35 + (w * 0.7) * (c + 0.5) / cols + (rnd() - 0.5) * 30;
       for (let k = 0; k < n; k++) {
         const drift = Math.sin(k * 0.8 + c) * 18 + k * 6;
-        el('ellipse', { cx: bx + drift, cy: cy - 10 - k * 26, rx: 26 + k * 9, ry: 16 + k * 6, fill: 'url(#steamG)', opacity: (op * (0.8 - k * 0.07)).toFixed(3), filter: 'url(#blur6)' }, $('steam'));
+        el('ellipse', { cx: bx + drift, cy: cy - 10 - k * 26, rx: 26 + k * 9, ry: 16 + k * 6, fill: 'url(#steamG)', opacity: (op * (0.62 - k * 0.07)).toFixed(3), filter: 'url(#blur6)' }, $('steam'));
       }
     }
   });
-  // tall plume from the arch pool reaching up toward the title band
-  for (let k = 0; k < 10; k++) {
-    el('ellipse', { cx: 520 + Math.sin(k * 0.7) * 26, cy: 640 - k * 34, rx: 34 + k * 10, ry: 20 + k * 5, fill: 'url(#steamG)', opacity: (0.42 - k * 0.036).toFixed(3), filter: 'url(#blur14)' }, $('steam'));
-  }
 
   // lantern path winding from the near pool up to the bathhouse
   const path = [[600, 1004], [660, 980], [720, 952], [770, 925], [810, 900], [940, 880], [960, 850], [930, 820], [880, 800], [840, 780], [810, 755], [790, 728], [770, 700], [760, 680]];
@@ -237,6 +268,21 @@
     if (y < 300 && x > 140 && x < 900) continue;
     el('circle', { cx: x, cy: y, r: (0.9 + rnd() * 2.2).toFixed(2), fill: '#fffaf2', opacity: (0.45 + rnd() * 0.45).toFixed(2) }, $('flakes'));
   }
+  // icicles hanging into the ring window and under the name cornice
+  for (let x = 452; x <= 588; x += 11) {
+    const top = 478 - Math.sqrt(104 * 104 - (x - 520) * (x - 520)) - 1;
+    const L = 10 + ((x * 7) % 19);
+    el('path', { d: `M${x - 4} ${top} L${x + 4} ${top} L${x} ${top + L} Z` }, $('ringIce'));
+  }
+  for (let x = 196; x <= 850; x += 17) {
+    const t = (x - 178) / (870 - 178), top = 302 + Math.sin(Math.PI * t) * 20;
+    const L = 6 + ((x * 13) % 15);
+    el('path', { d: `M${x - 3.5} ${top} L${x + 3.5} ${top} L${x} ${top + L} Z` }, $('corniceIce'));
+  }
+  [178, 330, 440, 560, 668, 862].forEach(x => {
+    el('circle', { cx: x, cy: 287, r: 22, fill: 'url(#amberGlow)' }, $('corniceLamps'));
+    el('circle', { cx: x, cy: 287, r: 4, fill: '#ffe39a' }, $('corniceLamps'));
+  });
   document.fonts.ready.then(() => { window.__ready = true; });
 })();
 </script>

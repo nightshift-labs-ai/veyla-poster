@@ -8,9 +8,9 @@
 5. Colour and composition sell it: a deliberate palette and a layout that leads from name to landmark to horizon. Clutter scores nothing.
 
 ## Concept
-- First read: "VEYLA" in big tall cream condensed caps on deep indigo sky, then a stone arch silhouetted against a peach-rose horizon glow.
+- First read: "VEYLA" as huge letters of ice with snow on top and stone-coloured depth, standing on a lantern-lit snow cornice hung with icicles (part of the scene, not a header), then the Moon Ring below it.
 - Telling detail: turquoise hot pools stepping down in terraces through cream snow, each breathing white steam lit amber, with two tiny bathers in the nearest pool.
-- Landmark: one tall natural stone arch over the upper pool, a small timber bathhouse beside it with glowing amber windows and chimney smoke.
+- Landmark: the Moon Ring of Veyla, a crisp stone ring with a perfectly round window framing the rising moon, a snow cap, icicles and an amber rim of light, standing over the upper pool. A small timber bathhouse beside it has glowing amber windows and chimney smoke. Steam stays low and light so it never blurs the ring.
 - Palette (7): indigo #1d1b4a, rose #d98a9a, peach #f6c59a, lilac/blue-grey peaks #8f8fb8, cream snow #f4ead8, turquoise #2fd0c4, amber #ffb347, plus near-black pines #121429.
 - Type: League Gothic for the name (wide tracking, ~20 % of height). The name is the only copy: the judge's brief allows no taglines or other copy, so the descriptor line was dropped and the name set larger and lower.
 - Craft: flat screen-print vector, 6 depth layers with atmospheric perspective, feTurbulence paper grain, a few snowflakes.
